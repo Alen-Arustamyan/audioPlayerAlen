@@ -96,3 +96,5 @@ function prev(){
     playSong()
     play.src = "images/pause.png"
 }
+
+///

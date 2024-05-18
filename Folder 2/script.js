@@ -117,3 +117,5 @@ function decrease(){
 function increase(){
     song.volume+=0.2
 }
+
+//final//

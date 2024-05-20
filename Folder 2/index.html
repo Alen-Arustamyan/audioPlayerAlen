@@ -23,13 +23,25 @@
                 <img src="images/play-button-arrowhead.png" id="play" onclick="playOrPause()" alt="">
                 <img src="images/next.png" id="next" onclick="next()" alt="">
             </div>
-            <div class="seek-bar">
+            <!-- <div class="seek-bar">
+                <div class="progress-container">
+                    <div class="progress" id="progress"></div>
+                  </div>
+                  
                 <div class="handle">
+`
+
                     <div class="fill">
 
                     </div>
                 </div>
+            </div> -->
+
+            <div class="seek-bar">
+                <div class="progress"></div>
+                <div class="seek-bar-circle"></div>
             </div>
+
             <div class="mute">
                 <div class="currentTime">00 : 00 / 00 : 00</div>
                 <div class="muteButtons">
@@ -41,6 +53,17 @@
         </div>            
     </div>
    
+
+    <!-- <div class="player">
+        <audio id="audio" controls>
+            <source src="music/Karen Gevorgyan - Luyser, Luyser.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="seek-bar">
+            <div class="progress"></div>
+            <div class="seek-bar-circle"></div>
+        </div>
+    </div> -->
 
    
     <script src="script.js"></script>

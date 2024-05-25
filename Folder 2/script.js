@@ -1,14 +1,16 @@
 let data = {
-    title: ["Luyser", "Спой", "When I Win"],
+    title: ["Charles Aznavour","Спой", "When I Win","Luyser"],
     song: [
-        "music/Karen Gevorgyan - Luyser, Luyser.mp3",
+        "music/Charles Aznavour – La bohème.mp3",
         "music/A.V.G feat. MACAN - spoy.mp3",
-        "music/MiyaGi & Endspiel - When I Win.mp3"
+        "music/MiyaGi & Endspiel - When I Win.mp3",
+        "music/Karen Gevorgyan - Luyser, Luyser.mp3"
     ],
     poster: [
-        "https://source.boomplaymusic.com/group1/M1D/82/1E/rBEeMV7c6IeAKCFgAADA9DG6ay0044.jpg",
+        "https://www.hollywoodreporter.com/wp-content/uploads/2014/09/charles_aznavour.jpg",
         "https://cdn.promodj.com/afs/19b6cf3bd4a7bf9471f98ce268fb370912%3Aresize%3A640x480%3Afill%3Affffff%3A5cab1c",
-        "https://lastfm.freetls.fastly.net/i/u/500x500/23bf00d9af5797c22d9975d1506008d6.jpg"
+        "https://lastfm.freetls.fastly.net/i/u/500x500/23bf00d9af5797c22d9975d1506008d6.jpg",
+        "https://source.boomplaymusic.com/group1/M1D/82/1E/rBEeMV7c6IeAKCFgAADA9DG6ay0044.jpg"
     ]
 }
 
@@ -121,5 +123,10 @@ document.addEventListener("DOMContentLoaded", function () {
     seekBar.addEventListener('click', (e) => {
         const seekTime = (e.offsetX / seekBar.offsetWidth) * song.duration;
         song.currentTime = seekTime;
+
+
     });
 });
+function changeSpeed(speed){
+    song.playbackRate = parseFloat(speed);
+}

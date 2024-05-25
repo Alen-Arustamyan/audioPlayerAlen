@@ -44,11 +44,24 @@
 
             <div class="mute">
                 <div class="currentTime">00 : 00 / 00 : 00</div>
+
+                <div class="speed-control">
+                    <label for="speed" class="control">Speed:</label>
+                    <select id="speed" onchange="changeSpeed(this.value)">
+                        <option value="0.25">0.25</option>
+                        <option value="0.5">0.5</option>
+                        <option value="0.75">0.75</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option></select>
+                </div>
                 <div class="muteButtons">
                     <img src="images/volume-down.png" id="decrease" onclick="decrease()" alt="">
                     <img src="images/volume.png" id="mute" onclick="mute()" alt="">
                     <img src="images/increase-volume.png" id="increase" onclick="increase()"alt="">
                 </div>
+
+
+                  
             </div>
         </div>            
     </div>

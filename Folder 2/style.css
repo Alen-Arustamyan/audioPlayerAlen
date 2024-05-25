@@ -254,7 +254,11 @@ body {
     pointer-events: none;
 }
 
-
+.speed-control{
+    display: flex;
+    width: 200px;
+    margin-left: 50px;
+}
 
 
 
